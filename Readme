@@ -72,5 +72,5 @@ C'est catastrophique car sans ces configurations, le timer ne fonctionnera pas c
 3.3.9
 Pour corriger cela, vous devez ajouter la configuration initiale du timer dans le fichier main.c ou dans un fichier dédié, et vous devez également écrire une fonction ISR pour gérer les interruptions du timer.
 
-
-
+//3.4 UART, un simple echo
+Nous avons vérifier la configuration sur STM32CubeMX de la liaison UART mais nous n'avons pas eu le temps de créer une paire de fichiers Serial.c / Serial.h
