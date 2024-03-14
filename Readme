@@ -30,7 +30,7 @@ Le pin peut être commandé par un outil de control externe comme un pin d'entr�
 
 1.3.8: Le signal MISO n'est pas utilisé car le DAC ne renvoit pas de données
 
-1.3.10: Les indications du pinout du connecteur SWD se trouvent 
+1.3.10: Les indications du pinout du connecteur SWD se trouvent sur la datasheet de la sonde
 
 ///2 Routage du circuit
 //2.1 Placement des composants
