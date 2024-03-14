@@ -60,3 +60,17 @@ Fréquence du compteur = fréquence d’horloge du timer/ Fréquence  de découp
 Prescaler= (32 000 000 / 1 000 x 255) - 1 = 124
 Pour obtenir une fréquence de 1 kHz on a un prescaler de 124
 
+//3.3 LED avec timer
+3.3.6:
+La routine de service d’interruption qui gère l'interruption de rupture de TIM1 et l'interruption globale de TIM15.
+Elle est définit dans le fichier stm32l4xx_it.c
+void TIM1_BRK_TIM15_IRQHandler(void)
+3.3.7:
+Par rapport au code généré par la HAL, il manque la configuration initiale du timer et la gestion de l'interruption dans la routine ISR.
+3.3.8:
+C'est catastrophique car sans ces configurations, le timer ne fonctionnera pas correctement et les interruptions ne seront pas gérées.
+3.3.9
+Pour corriger cela, vous devez ajouter la configuration initiale du timer dans le fichier main.c ou dans un fichier dédié, et vous devez également écrire une fonction ISR pour gérer les interruptions du timer.
+
+
+
