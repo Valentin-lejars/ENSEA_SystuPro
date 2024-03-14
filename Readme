@@ -56,7 +56,7 @@ En pratique, `__STATIC_INLINE` est souvent utilisé pour définir des fonctions 
 3.2.1: 
 Le timer 2 est configuré pour générer une PWM sur le canal 1 avec une période de compteur de 255 (résolution de 8 bits).
 3.2.2:
-Fréquence du compteur = fréquence d’horloge du timer/ Fréquence  dedécoupage cible x Counter périod -1
+Fréquence du compteur = fréquence d’horloge du timer/ Fréquence  de découpage cible x Counter périod -1
 Prescaler= (32 000 000 / 1 000 x 255) - 1 = 124
 Pour obtenir une fréquence de 1 kHz on a un prescaler de 124
 
